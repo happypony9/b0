@@ -15,6 +15,8 @@ install)
   wget https://www.buffer0verflow.com/files/vpn.zip; 
   unzip vpn.zip;
   rm vpn.zip;
+  
+  chmod +x /b0/*.sh;
   ;;
 update)  
   cd /;
@@ -24,6 +26,8 @@ update)
   wget https://www.buffer0verflow.com/files/vpn.zip; 
   unzip vpn.zip;
   rm vpn.zip;
+  
+  chmod +x /b0/*.sh;
   ;;
 update)  
   echo  "Running b0..."
