@@ -7,7 +7,7 @@ install)
   echo "Installing b0..."
   echo "Installing dependencies..."
   apt-get update;
-  apt-get install git nano screen python-argparse curl wget lynx unzip openvpn --yes
+  apt-get install iftop htop git nano screen python-argparse curl wget lynx unzip openvpn --yes
   echo "Finished installing dependencies..."
   echo "Removing old installation..."
   rm -rf /b0
