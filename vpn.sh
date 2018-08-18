@@ -3,14 +3,14 @@ files=(/b0/vpn/*.ovpn)
 config="${files[RANDOM % ${#files[@]}]}"
 case $1 in
 start)
-  openvpn --config $config > /vpn/log 2>&1;
+  sudo screen -dmS vpn openvpn --config $config > /vpn/log 2>&1;
   ;;
 stop) 
   pkill -9 openvpn > /vpn/log 2>&1;
   ;;
 restart)
   pkill -9 openvpn > /vpn/log 2>&1;
-  openvpn --config $config > /vpn/log 2>&1;
+  sudo screen -dmS vpn openvpn --config $config > /vpn/log 2>&1;
   ;;
 clear)  
   pkill -9 openvpn > /vpn/log 2>&1;
