@@ -19,7 +19,7 @@ install)
   unzip vpn.zip;
   rm vpn.zip;
   
-  chmod +x /b0/*.sh;
+  chmod +x /b0/*.sh; chmod +x /b0/*.ssh;
   ;;
 update)  
   git config --global user.email "none@none.com"
@@ -32,7 +32,7 @@ update)
   unzip vpn.zip;
   rm vpn.zip;
   
-  chmod +x /b0/*.sh;
+  chmod +x /b0/*.sh; chmod +x /b0/*.ssh;
   ;;
 update)  
   echo  "Running b0..."
