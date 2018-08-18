@@ -19,6 +19,7 @@ install)
   unzip vpn.zip;
   rm vpn.zip;
   chmod +x /b0/*.sh; chmod +x /b0/*.ssh; chmod +x /b0/showip;
+  ln -s /b0/showip /usr/bin/showip; ln -s /b0/vpn.sh /usr/bin/vpn; ln -s /b0/b0.sh /usr/bin/b0;
   ;;
 update)  
   git config --global user.email "none@none.com"
@@ -32,6 +33,7 @@ update)
   rm vpn.zip;
   
   chmod +x /b0/*.sh; chmod +x /b0/*.ssh; chmod +x /b0/showip;
+  ln -s /b0/showip /usr/bin/showip; ln -s /b0/vpn.sh /usr/bin/vpn; ln -s /b0/b0.sh /usr/bin/b0;  
   ;;
 update)  
   echo  "Running b0..."
