@@ -1,6 +1,7 @@
 #!/bin/bash
 case $1 in
 install)  
+  cd /;
   echo "Installing b0..."
   echo "Installing dependencies..."
   apt-get install git nano screen python-argparse curl wget lynx unzip openvpn --yes
@@ -16,6 +17,7 @@ install)
   unzip jc3hc.zip;
   ;;
 update)  
+  cd /;
   echo  "Updating b0..."
   cd /b0; git pull
   rm -rf /b0/vpn; 
