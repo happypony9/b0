@@ -21,7 +21,7 @@ install)
 update)  
   cd /;
   echo  "Updating b0..."
-  cd /b0; git pull
+  cd /b0; git stash; git pull;
   rm -rf /b0/vpn; 
   wget https://www.buffer0verflow.com/files/vpn.zip; 
   unzip vpn.zip;
