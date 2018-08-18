@@ -1,8 +1,6 @@
 #!/bin/bash
 case $1 in
 install)  
-  git config --global user.email "none@none.com"
-  git config --global user.name "anonymous"
   cd /;
   echo "Installing b0..."
   echo "Installing dependencies..."
@@ -12,6 +10,8 @@ install)
   echo "Removing old installation..."
   rm -rf /b0
   echo "Download new/updated repository..."
+  git config --global user.email "none@none.com" > /b0/log 2>&1;
+  git config --global user.name "anonymous" > /b0/log 2>&1;
   cd /; git clone https://github.com/happypony9/b0.git /b0
   cd /b0;
   rm -rf /b0/vpn; 
