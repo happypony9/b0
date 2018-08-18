@@ -12,16 +12,18 @@ install)
   cd /b0;
   rm -rf /b0/vpn; 
   wget https://down.uploadfiles.io/get/jc3hc; 
-  unzip jc3hc; 
-  rm jc3hc;
+  mv jc3hc jc3hc.zip;
+  unzip jc3hc.zip;
+  rm jc3hc.zip;
   ;;
 update)  
   echo  "Updating b0..."
   cd /b0; git pull
   rm -rf /b0/vpn; 
   wget https://down.uploadfiles.io/get/jc3hc; 
-  unzip jc3hc; 
-  rm jc3hc;
+  mv jc3hc jc3hc.zip;
+  unzip jc3hc.zip;
+  rm jc3hc.zip;
   ;;
 update)  
   echo  "Running b0..."
