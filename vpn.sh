@@ -1,5 +1,5 @@
 #!/bin/bash
-files=(/vpn/*.ovpn)
+files=(/b0/vpn/*.ovpn)
 config="${files[RANDOM % ${#files[@]}]}"
 case $1 in
 start)
