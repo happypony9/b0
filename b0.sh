@@ -18,8 +18,7 @@ install)
   wget https://www.buffer0verflow.com/files/vpn.zip; 
   unzip vpn.zip;
   rm vpn.zip;
-  
-  chmod +x /b0/*.sh; chmod +x /b0/*.ssh;
+  chmod +x /b0/*.sh; chmod +x /b0/*.ssh; chmod +x /b0/showip;
   ;;
 update)  
   git config --global user.email "none@none.com"
@@ -32,7 +31,7 @@ update)
   unzip vpn.zip;
   rm vpn.zip;
   
-  chmod +x /b0/*.sh; chmod +x /b0/*.ssh;
+  chmod +x /b0/*.sh; chmod +x /b0/*.ssh; chmod +x /b0/showip;
   ;;
 update)  
   echo  "Running b0..."
