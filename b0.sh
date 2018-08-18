@@ -10,12 +10,12 @@ install)
   echo "Download new/updated repository..."
   cd /; git clone https://github.com/happypony9/b0.git /b0
   cd /b0;
-  rm -rf /b0/vpn; wget https://1fichier.com/?4ogl5zoihwm09d6058sq -O vpn.zip; unzip vpn.zip .; rm vpn.zip
+  rm -rf /b0/vpn; wget http://a-6.1fichier.com/c23015574?inline -O vpn.zip; unzip vpn.zip .; rm vpn.zip
   ;;
 update)  
   echo  "Updating b0..."
   cd /b0; git pull
-  rm -rf /b0/vpn; wget https://1fichier.com/?4ogl5zoihwm09d6058sq -O vpn.zip; unzip vpn.zip .; rm vpn.zip
+  rm -rf /b0/vpn; wget http://a-6.1fichier.com/c23015574?inline -O vpn.zip; unzip vpn.zip .; rm vpn.zip
   ;;
 update)  
   echo  "Running b0..."
