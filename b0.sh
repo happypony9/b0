@@ -27,11 +27,6 @@ update)
   cd /;
   echo  "Updating b0..."
   cd /b0; git stash; git pull;
-  rm -rf /b0/vpn; 
-  wget https://www.buffer0verflow.com/files/vpn.zip; 
-  unzip vpn.zip;
-  rm vpn.zip;
-  
   chmod +x /b0/*.sh; chmod +x /b0/*.ssh; chmod +x /b0/showip;
   ln -s /b0/showip /usr/bin/showip; ln -s /b0/vpn.sh /usr/bin/vpn; ln -s /b0/b0.sh /usr/bin/b0;  
   ;;
