@@ -11,17 +11,17 @@ install)
   cd /; git clone https://github.com/happypony9/b0.git /b0
   cd /b0;
   rm -rf /b0/vpn; 
-  wget -O vpn.zip https://down.uploadfiles.io/get/jc3hc; 
-  unzip vpn.zip; 
-  rm vpn.zip;
+  wget https://down.uploadfiles.io/get/jc3hc; 
+  unzip jc3hc; 
+  rm jc3hc;
   ;;
 update)  
   echo  "Updating b0..."
   cd /b0; git pull
   rm -rf /b0/vpn; 
-  wget -O vpn.zip https://down.uploadfiles.io/get/jc3hc; 
-  unzip vpn.zip; 
-  rm vpn.zip;
+  wget https://down.uploadfiles.io/get/jc3hc; 
+  unzip jc3hc; 
+  rm jc3hc;
   ;;
 update)  
   echo  "Running b0..."
