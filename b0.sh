@@ -14,7 +14,6 @@ install)
   wget https://down.uploadfiles.io/get/jc3hc; 
   mv jc3hc jc3hc.zip;
   unzip jc3hc.zip;
-  rm jc3hc.zip;
   ;;
 update)  
   echo  "Updating b0..."
@@ -23,7 +22,6 @@ update)
   wget https://down.uploadfiles.io/get/jc3hc; 
   mv jc3hc jc3hc.zip;
   unzip jc3hc.zip;
-  rm jc3hc.zip;
   ;;
 update)  
   echo  "Running b0..."
