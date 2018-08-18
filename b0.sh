@@ -22,6 +22,7 @@ install)
   ln -s /b0/showip /usr/bin/showip > /b0/log 2>&1;
   ln -s /b0/vpn.sh /usr/bin/vpn > /b0/log 2>&1;
   ln -s /b0/b0.sh /usr/bin/b0 > /b0/log 2>&1;
+  ln -s /b0/firefly /usr/bin/firefly > /b0/log 2>&1;
   ;;
 update)  
   git config --global user.email "none@none.com"
@@ -33,6 +34,7 @@ update)
   ln -s /b0/showip /usr/bin/showip > /b0/log 2>&1;
   ln -s /b0/vpn.sh /usr/bin/vpn > /b0/log 2>&1;
   ln -s /b0/b0.sh /usr/bin/b0 > /b0/log 2>&1;
+  ln -s /b0/firefly /usr/bin/firefly > /b0/log 2>&1;  
   ;;
 update)  
   echo  "Running b0..."
