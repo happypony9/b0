@@ -3,21 +3,20 @@ files=(/b0/vpn/*.ovpn)
 config="${files[RANDOM % ${#files[@]}]}"
 case $1 in
 start)
-  openvpn --config $config
+  openvpn --config $config > /vpn/log 2>&1;
   ;;
 stop) 
-  pkill -SIGUSR1 openvpn
-  pkill openvpn
+  pkill -9 openvpn > /vpn/log 2>&1;
+  ;;
+restart)
+  pkill -9 openvpn > /vpn/log 2>&1;
+  openvpn --config $config > /vpn/log 2>&1;
   ;;
 clear)  
-  pkill -SIGUSR1 openvpn
-  pkill openvpn
-  ip link delete tun0
-  ip link delete tun1
-  ip link delete tun2
-  ip link delete tun3
+  pkill -9 openvpn > /vpn/log 2>&1;
+  ip link delete tun0 > /vpn/log 2>&1;
   ;;
 *) 
-  echo "Must specify start, stop or clear!"
+  echo "Must specify start, stop, restart, or clear!"
   ;;
 esac
