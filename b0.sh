@@ -1,6 +1,8 @@
 #!/bin/bash
 case $1 in
 install)  
+  git config --global user.email "none@none.com"
+  git config --global user.name "anonymous"
   cd /;
   echo "Installing b0..."
   echo "Installing dependencies..."
@@ -19,6 +21,8 @@ install)
   chmod +x /b0/*.sh;
   ;;
 update)  
+  git config --global user.email "none@none.com"
+  git config --global user.name "anonymous"
   cd /;
   echo  "Updating b0..."
   cd /b0; git stash; git pull;
