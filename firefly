@@ -40,7 +40,7 @@ optional.add_argument('-payload', help='Set payload as hex-string')
 
 
 
-print("\nFirefly payloader.\n")
+print("\nFirefly Payloads LTD at your service!\n")
 args = parser.parse_args()
 connected = 0
 dropped = 0
