@@ -48,7 +48,7 @@ update)
   echo  "Running b0..."
   ;;
 graph)
-  speedometer -l  -r tun0 -t tun0 -m $(( 1024 * 1024 * 3 / 2 ))
+  speedometer -l  -r eth0 -t eth0 -m $(( 1024 * 1024 * 3 / 2 ))
   ;;
 *) 
   echo "Must specify install, update or run!"
