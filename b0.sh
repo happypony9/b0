@@ -10,8 +10,8 @@ install)
   echo "Removing old installation..."
   rm -rf /b0
   echo "Download new/updated repository..."
-  git config --global user.email "none@none.com" > /b0/log 2>&1;
-  git config --global user.name "anonymous" > /b0/log 2>&1;
+  git config --global user.email "none@none.com" > /dev/null 2>&1;
+  git config --global user.name "anonymous" > /dev/null 2>&1;
   cd /; git clone https://github.com/happypony9/b0.git /b0
   cd /b0;
   rm -rf /b0/vpn; 
@@ -25,8 +25,8 @@ install)
   ln -s /b0/firefly /usr/bin/firefly > /b0/log 2>&1;
   ;;
 update)  
-  git config --global user.email "none@none.com"
-  git config --global user.name "anonymous"
+  git config --global user.email "none@none.com" > /dev/null 2>&1;
+  git config --global user.name "anonymous" > /dev/null 2>&1;
   cd /;
   echo  "Updating b0..."
   cd /b0; git stash; git pull;
