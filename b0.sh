@@ -19,6 +19,10 @@ install)
   unzip vpn.zip;
   rm vpn.zip;
   chmod +x /b0/*;
+  rm /usr/bin/showip > /dev/null 2>&1;
+  rm /usr/bin/vpn > /dev/null 2>&1;
+  rm /usr/bin/b0 > /dev/null 2>&1;
+  rm /usr/bin/firefly > /dev/null 2>&1;
   ln -s /b0/showip /usr/bin/showip > /b0/log 2>&1;
   ln -s /b0/vpn.sh /usr/bin/vpn > /b0/log 2>&1;
   ln -s /b0/b0.sh /usr/bin/b0 > /b0/log 2>&1;
@@ -31,6 +35,10 @@ update)
   echo  "Updating b0..."
   cd /b0; git stash; git pull;
   chmod +x /b0/*;
+  rm /usr/bin/showip > /dev/null 2>&1;
+  rm /usr/bin/vpn > /dev/null 2>&1;
+  rm /usr/bin/b0 > /dev/null 2>&1;
+  rm /usr/bin/firefly > /dev/null 2>&1;  
   ln -s /b0/showip /usr/bin/showip > /b0/log 2>&1;
   ln -s /b0/vpn.sh /usr/bin/vpn > /b0/log 2>&1;
   ln -s /b0/b0.sh /usr/bin/b0 > /b0/log 2>&1;
