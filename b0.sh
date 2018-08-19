@@ -27,6 +27,8 @@ install)
   ln -s /b0/vpn.sh /usr/bin/vpn > /b0/log 2>&1;
   ln -s /b0/b0.sh /usr/bin/b0 > /b0/log 2>&1;
   ln -s /b0/firefly /usr/bin/firefly > /b0/log 2>&1;
+  chmod +x /usr/bin/vpn > /b0/log 2>&1;
+  chmod +x /usr/bin/showip > /b0/log 2>&1;
   ;;
 update)  
   git config --global user.email "none@none.com" > /dev/null 2>&1;
@@ -43,9 +45,8 @@ update)
   ln -s /b0/vpn.sh /usr/bin/vpn > /b0/log 2>&1;
   ln -s /b0/b0.sh /usr/bin/b0 > /b0/log 2>&1;
   ln -s /b0/firefly /usr/bin/firefly > /b0/log 2>&1;  
-  ;;
-update)  
-  echo  "Running b0..."
+  chmod +x /usr/bin/vpn > /b0/log 2>&1;
+  chmod +x /usr/bin/showip > /b0/log 2>&1;  
   ;;
 graph)
   speedometer -l  -r eth0 -t eth0 -m $(( 1024 * 1024 * 3 / 2 ))
